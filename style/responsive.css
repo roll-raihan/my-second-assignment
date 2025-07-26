@@ -165,7 +165,6 @@ ul li a{
       color: white;
       font-size: 1rem;
       font-weight: bold;
-      
       padding: 10px;
       border-radius: 10px;
 }
@@ -174,9 +173,6 @@ ul li a{
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
-/* .deal-img{
-
-} */
 .deal-img{
      display: grid;
       grid-template-columns: 1fr 1fr;
@@ -185,13 +181,6 @@ ul li a{
       width: 600px;
       height: 400px;
     }
-    /* .deal-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: 20px;
-    } */
      .img1 {
       grid-column: 1;
       grid-row: 1;
@@ -214,6 +203,23 @@ ul li a{
         align-items: center;
         border-left: 150px;
     }
+    /* footer sedction style */
+   .email-title{
+    font-weight: 700;
+    font-size: 3rem;
+   } 
+   input{
+    width: 644px;
+    height: 75px;
+    border: none;
+   }
+   .email-input{
+    display: flex;
+   }
+   .join{
+    margin-top: 120px;
+    border-left: none;
+   }
 /* responsive media */
 @media screen and (max-width: 576px) {
     .noto-serif-font{
