@@ -35,12 +35,15 @@ header, main{
 .ul-li{
     list-style: none;
 }
-ul li a{
+ul li a, .font{
     text-decoration: none;
 }
 .nav-title{
     display: flex;
-    margin: 30px 150px 120px 150px;
+    /* margin: 30px 150px 120px 150px; */
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 150px;
     justify-content: space-between;
     align-items: center;
 }
@@ -62,10 +65,12 @@ ul li a{
 .banner{
     justify-content: space-between;
     align-items: center;
-    margin: 120px 150px;
-    max-width: 1140px;
-    padding-right: 150px;
-    
+    /* margin: 120px 150px; */
+    /* max-width: 1140px; */
+    /* padding-right: 150px; */
+    padding-left: 150px;
+    width: 1140px;
+    margin: 0 auto;
 }
 .banner-content{
     max-width: 570px;
@@ -100,8 +105,11 @@ ul li a{
 }
 .main-plants{
     text-align: center;
-   max-width: 1140px;
-    margin-left: 120px 150px;
+   /* max-width: 1140px; */
+    /* margin-left: 120px 150px; */
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 150px;
 }
 .plants-info{
     font-size: 1.2rem;
@@ -116,8 +124,10 @@ ul li a{
 /* plants lover section */
 .plants-lover{
     display: flex;
-    width: 1140px;
+    /* width: 1140px; */
     margin: 210px 160px 130px 120px;
+    width: 1140px;
+    /* margin: 0 auto; */
     
 }
 .plants-lover-img{
@@ -202,6 +212,9 @@ ul li a{
         justify-content: center;
         align-items: center;
         border-left: 150px;
+        width: 1140px;
+        margin: 0 auto;
+        padding-left: 150px;
     }
     /* footer sedction style */
    .email-title{
@@ -220,6 +233,21 @@ ul li a{
     margin-top: 120px;
     border-left: none;
    }
+   .box-2, .box-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .box-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+   }
+   .footer-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 160px;
+    gap: 110px;
+   }
 /* responsive media */
 @media screen and (max-width: 576px) {
     .noto-serif-font{
@@ -227,14 +255,19 @@ ul li a{
         align-items: start;
         
     }
+    .nav-title{
+        width: 390px;
+        margin: 0 auto;
+    }
     .hidden{
         display: none;
     }
     .banner{
         flex-direction: column-reverse;
-        text-align: center;
-        margin: 0;
-        gap: 0;
+        text-align: left;
+        width: 390px;
+        /* margin: 0 auto; */
+        
     }
  
 .banner-img{
@@ -242,9 +275,13 @@ ul li a{
     padding-bottom: 0px;
 }
 .banner-content{
-    padding-top: 0;
     text-align: left;
+    padding-left: -200px;
 }
+/* .main-plants{
+    width: 390px;
+    margin: 0 auto;
+} */
 .plants-card{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -266,5 +303,19 @@ ul li a{
       object-fit: cover;
       display: block;
       border-radius: 20px;
+    }
+    .join{
+        margin-top: 700px;
+        
+    }
+    .footer-box{
+        flex-direction: column;
+        gap: 0;
+    }
+    .box-2, .box-3{
+        gap: 10px;
+    }
+    .box-4{
+        margin-top: 10px;
     }
 }
